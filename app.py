@@ -12,8 +12,8 @@ app.secret_key = os.getenv("SECRET_KEY", "pastoral-acolhida-2026")
 ESCALA_FILE = "escala.json"
 EXTRAS_FILE = "extras.json"
 
-USUARIO_ADMIN = "Coordenador"
-SENHA_ADMIN = "acolhida2026@"
+USUARIO_ADMIN = "USUÁRIO"
+SENHA_ADMIN = "SENHA"
 
 # ================= DADOS FIXOS =================
 
@@ -210,3 +210,4 @@ def admin_aviso():
 
 if __name__ == "__main__":
     app.run(debug=False)
+
