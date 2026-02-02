@@ -1,0 +1,285 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #000;
+    background-color: #fff;
+}
+
+/* Títulos principais */
+h1, h2 {
+    color: #1b5e20 !important;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Texto comum */
+p, li {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Botões principais */
+.btn-success {
+    background-color: #1b5e20 !important;
+    border: none !important;
+    color: #fff !important;
+}
+.btn-success:hover {
+    background-color: #8e2430 !important;
+    color: #fff !important;
+}
+
+.btn-danger {
+    background-color: #8e2430 !important;
+    border: none !important;
+    color: #fff !important;
+}
+.btn-danger:hover {
+    background-color: #c9a227 !important;
+    color: #fff !important;
+}
+
+/* Botões de seleção de semana */
+.btn-semana {
+    background-color: #f8f9fa;       /* cinza claro */
+    border: 1px solid #1b5e20;       /* verde escuro */
+    color: #1b5e20;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;           /* sempre lado a lado */
+    min-width: 90px;
+}
+.btn-semana:hover {
+    background-color: #1b5e20;
+    color: #fff;
+}
+.btn-semana.active {
+    background-color: #1b5e20;       /* verde sólido */
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 6px rgba(27,94,32,0.6);
+}
+
+/* Cabeçalhos dos cards */
+.card-header.bg-success {
+    background-color: #1b5e20 !important;
+    color: #fff !important;
+}
+
+.card-header.bg-danger {
+    background-color: #8e2430 !important;
+    color: #fff !important;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+/* Cards com sombra */
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    border-radius: 10px;
+}
+
+/* Blocos de dias com borda dourada */
+.dia-bloco {
+    border: 1px solid #c9a227;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.dia-bloco h4 {
+    color: #8e2430 !important;
+    font-weight: bold;
+}
+
+/* Texto "Sem nomes" mais claro */
+.text-muted {
+    color: #cfcfcf !important;
+}
+
+/* Horários da escala em verde escuro */
+.horario {
+    color: #1b5e20 !important; /* verde escuro */
+    font-weight: bold;
+}
+
+/* Responsivo para celular */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    p, li, td {
+        font-size: 1.2rem;
+    }
+    .btn-success, .btn-danger {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.4rem;
+        width: auto;
+        min-width: 120px;
+        display: inline-block;
+        margin-right: 1rem;
+        vertical-align: middle;
+    }
+    .btn-semana {
+        width: auto;          /* não ocupa 100% */
+        min-width: 90px;      /* largura mínima */
+        display: inline-block;/* lado a lado */
+        margin: 0.2rem;
+    }
+    .logo {
+        max-width: 90%;
+        width: 90%;
+        height: auto;
+
+    }
+    .container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+/* Ajuste para título e datas */
+.escala-titulo,
+.escala-datas {
+    text-align: center;
+}
+
+/* No computador: lado a lado */
+@media (min-width: 601px) {
+    .escala-titulo {
+        display: inline;
+    }
+    .escala-datas {
+        display: inline;
+        margin-left: 5px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #000;
+    }
+}
+
+/* No celular: um abaixo do outro para título/datas */
+@media (max-width: 600px) {
+    .escala-titulo {
+        display: block;
+        margin-bottom: 0;
+    }
+    .escala-datas {
+        display: block;
+        margin-top: -5px;
+        font-size: 1.5rem;
+        color: #555;
+    }
+}
+/* ===============================
+   AJUSTE ESPECÍFICO – LOGIN
+   =============================== */
+
+.login-card {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.login-card h3 {
+    color: #1b5e20;
+    font-weight: bold;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+    .login-card {
+        padding: 1.5rem;
+    }
+
+    .login-card input {
+        font-size: 1.3rem;
+        padding: 0.9rem;
+    }
+
+    .login-card button {
+        font-size: 1.3rem;
+        padding: 0.9rem;
+    }
+}
+/* Campo de avisos do coordenador */
+textarea.aviso-texto {
+    width: 100%;
+    min-height: 120px;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    resize: vertical;
+}
+
+/* Ajustes específicos para celular */
+@media (max-width: 600px) {
+    textarea.aviso-texto {
+        min-height: 180px;
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    .aviso-container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+.aviso {
+  background-color: #f8f9fa;   /* cinza bem claro */
+  border-left: 4px solid #198754; /* verde pastoral discreto */
+  color: #333;                 /* texto neutro */
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-top: 6px;
+  font-style: italic;
+  font-weight: 500;
+}
